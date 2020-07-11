@@ -1,0 +1,81 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stop Watch in JavaScript</title>
+        <style>
+            body
+            {
+                padding: 0;
+              margin: 0;
+              box-sizing: border-box    ;
+            }
+          .watch
+          {
+              background-color: #2b2b2b !important;
+              width: 100%;
+              height: 49vw;
+              /* padding-top: 100px; */
+              overflow-x: hidden;
+              
+               
+            }
+         .secondDiv
+           {
+            margin-left: 450px;
+
+           }
+           .secondDiv .btn
+           {
+               padding: 8px 20px 8px 20px;
+               cursor: pointer;
+               color: whitesmoke;
+               background-color: #2b2b2b;
+               
+              
+
+           }
+           .secondDiv .btn:hover
+           {
+               transform:scale(1.2);
+           }
+           .firstDiv
+           {
+            margin-left: 440px;
+
+           }
+           h2
+           {
+               display: inline-block;
+                padding-left:28px ;
+                padding-right: 25px;
+               font-size: 3rem;
+               color: whitesmoke;
+               box-shadow: 0px 0px 10px gray;
+               margin-right:20px;
+               
+                     
+           }
+        </style>
+    </head>
+    <body>
+         
+        <div class="watch">
+            <h2 style="margin-left:240px">Stop Watch in JS By Arif Munir</h2>
+        <div class="firstDiv">
+            <h2 id="min">0</h2>
+            <h2 id="sec">0</h2>
+            <h2 id="ms">0</h2>
+
+        </div>
+        <div class="secondDiv">
+            <button onclick="start()" class="btn">Start</button>
+            <button onclick="stop()" class="btn">Pause</button>
+            <button onclick="reset()" class="btn">Reset</button>
+        </div>
+    </div>
+    <script src="./stopwatch.js"></script>
+    </body>
+    </html>
